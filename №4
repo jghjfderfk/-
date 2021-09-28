@@ -7,7 +7,7 @@ int main()
 	cin >> a >> b;
 	S = a * b;
 	P = 2 * (a + b);
-	cout << S << " "<< P;
+	cout << S << " " << P;
 	return 0;
 }
 
@@ -16,8 +16,9 @@ int main()
 using namespace std;
 int main()
 {
-	double L, π=3.14 , d;
-	cin >>  d;
+	double L, π = 3.14;
+	int d;
+	cin >> d;
 	L = π * d;
 	cout << L;
 	return 0;
@@ -30,8 +31,8 @@ int main()
 {
 	int a, b;
 	double S;
-	cin >>  a >> b;
-	S =(double) (a + b) / 2;
+	cin >> a >> b;
+	S = (double)(a + b) / 2;
 	cout << S;
 	return 0;
 }
@@ -43,11 +44,11 @@ int main()
 {
 	int a, b;
 	double S, R, P, F;
-	cin >>  a >> b;
+	cin >> a >> b;
 	S = a + b;
 	R = a - b;
 	P = a * b;
-	F = (double) (a * a) / (b * b);
+	F = (double)(a * a) / (b * b);
 	cout << S << " " << R << " " << P << " " << F;
 	return 0;
 }
@@ -59,11 +60,11 @@ int main()
 {
 	int a, b;
 	double S, R, P, F;
-	cin >>  a >> b;
+	cin >> a >> b;
 	S = a + b;
 	R = a - b;
 	P = a * b;
-	F = (double) abs(a) / abs(b) ;
+	F = (double)abs(a) / abs(b);
 	cout << S << " " << R << " " << P << " " << F;
 	return 0;
 }
