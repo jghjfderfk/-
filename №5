@@ -1,0 +1,85 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+	int x1, y1, x2, y2;
+	double d;
+	cout << "Vvedite x1"<< "   ";
+	cin >> x1;
+	cout << "Vvedite y1" << "   ";
+	cin >> y1;
+	cout << "Vvedite x2" << "   ";
+	cin >> x2;
+	cout << "Vvedite y2" << "   ";
+	cin >> y2;
+	d = sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+	cout << "rasstoyaniye=" << d;
+	return 0;
+}
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+	int A, B, C, AC, BC, S;
+	double d;
+	cout << "Vvedite A"<< "   ";
+	cin >> A;
+	cout << "Vvedite B" << "   ";
+	cin >> B;
+	cout << "Vvedite C" << "   ";
+	cin >> C;
+	if (A > C) {
+		AC = A - C;
+		cout << "dlina otrezka AC=" << AC << endl;
+	}
+	else {
+		AC = C - A;
+		cout << "dlina otrezka AC=" << AC << endl;
+	}
+	if (B > C) {
+		BC = B - C;
+		cout << "dlina otrezka BC=" << BC << endl;
+	}
+	else {
+		BC = C - B;
+		cout << "dlina otrezka BC=" << BC << endl;
+	}
+	S = AC + BC;
+	cout << "sum=" << S << endl;
+	
+	return 0;
+}
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+	int A, B, AC, BC, P;
+	double C;
+	cout << "Vvedite A" << "  ";
+	cin >> A;
+	cout << "Vvedite B" << "  ";
+	cin >> B;
+	cout << " togda C="; 
+	C = (double)(A + B) / 2;
+	cout << C << endl;
+	if (A > B) {
+		AC = A - C;
+		BC = C - B;
+		cout << "AC=" << AC<< endl;
+		cout << "BC=" << BC << endl;
+	}
+	else {
+		AC = C - A;
+		BC = B - C;
+		cout << "AC=" << AC << endl;
+		cout << "BC=" << BC << endl;
+	}
+	P = AC * BC;
+	cout << "proizvedenir otrezkov=" << P;
+	return 0;
+}
