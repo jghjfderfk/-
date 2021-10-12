@@ -11,3 +11,35 @@ int main()
 	return 0;
 }
 
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+	double p, a;
+	cin >> p;
+	a = (double) p * 180;
+	cout << a << "  gradusov";
+	return 0;
+}
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+	int A, X;
+	double C, Y;
+	cout << "vvedite kol-vo konfet v kg" << endl;
+	cin >> X;
+	cout << "naznachte tseny" << endl;
+	cin >> A;
+	C = (double)A / X;
+	cout << "togda tsena za 1 kg=" << C << "rubley"<<endl;
+	cout << "vvedite kol-vo konfet v kg " << endl;
+	cin >> Y;
+	Y = Y * C;
+	cout << "ih stoimost'=" << Y<<"rubley";
+	return 0;
+}
+
