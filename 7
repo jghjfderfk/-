@@ -43,3 +43,24 @@ int main()
 	return 0;
 }
 
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+	int V1, V2, S;
+	double t, S1, S2;
+	cout << "vvedite skorost' 1-go" << endl;
+	cin >> V1;
+	cout << "vvedite skorost' 2-go" << endl;
+	cin >> V2;
+	cout << "vvedite rasstoyanie mejdy nimi" << endl;
+	cin >> S;
+	cout << "vvedite vremya kotoroe predstoit proehat'" << endl;
+	cin >> t;
+	S1 = (double) V1 * t;
+	S2 = (double)V2 * t;
+	S = S + S1 + S2;
+	cout << "rasstoyanie mejdy nimi stanet=" << S;
+	return 0;
+}
