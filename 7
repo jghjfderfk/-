@@ -82,3 +82,35 @@ int main()
 	cout << "x=" << x;
 	return 0;
 }
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+	int A1, A2, B1, B2, C1, C2, d, d1, d2;
+	double x, y;
+	cout<< "A1*x + B1*y = C1" << endl;
+	cout << "A2*x + B2*y = C2" << endl;
+	cout << "vvedite A1" << endl;
+	cin >> A1;
+	cout << "vvedite A1" << endl;
+	cin >> A2;
+	cout << "vvedite A1" << endl;
+	cin >> B1;
+	cout << "vvedite A1" << endl;
+	cin >> B2;
+	cout << "vvedite A1" << endl;
+	cin >> C1;
+	cout << "vvedite A1" << endl;
+	cin >> C2;
+	cout << A1 << "*x+" << B1 << "*y=" << C1 << endl;
+	cout << A2 << "*x+" << B2 << "*y=" << C2 << endl;
+	d = A1 * B2 - A2 * B1;
+	d1 = C1 * B2 - C2 * B1;
+	d2 = A1 * C2 - A2 * C1;
+	x =(double) d1 / d;
+	y = (double)d2 / d;
+	cout << "x=" << x << "    y=" << y;
+		return 0;
+}
