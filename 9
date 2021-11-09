@@ -45,3 +45,66 @@ int main()
 	}
 	return 0;
 }
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+	int x, y = 7, N, c;
+	cout << "Vvedite den'" << endl;
+	cin >> x;
+	cout << "Vvedite nomer dnya nedeli 1 yanvarya, N<=7" << endl;
+	cin >> N;
+	if (N == 7) {
+		N = 0;
+	}
+	c = (x % y + N) % 8;
+	switch (N) {
+	case 0:
+		cout << " 1 yanvarya = voskresenye" << endl;
+		break;
+	case 1:
+		cout << "1 yanvarya = ponedel'nik" << endl;
+		break;
+	case 2:
+		cout << "1 yanvarya = vtornik" << endl;
+		break;
+	case 3:
+		cout << "1 yanvarya = sreda" << endl;
+		break;
+	case 4:
+		cout << "1 yanvarya = chetverg" << endl;
+		break;
+	case 5:
+		cout << "1 yanvarya = pyatnitsa" << endl;
+		break;
+	case 6:
+		cout << "1 yanvarya = subbota" << endl;
+		break;
+	}
+	switch (c) {
+	case 7:
+		cout <<x<<" chislo-voskresenye";
+		break;
+	case 1:
+		cout << x << " chislo-ponedel'nik";
+		break;
+	case 2:
+		cout << x << " chislo-vtornik";
+		break;
+	case 3:
+		cout << x << " chislo-sreda";
+		break;
+	case 4:
+		cout << x << " chislo-chetverg";
+		break;
+	case 5:
+		cout << x << " chislo-pyatnitsa";
+		break;
+	case 6:
+		cout << x << " chislo-subbota";
+		break;
+	}
+	return 0;
+}
