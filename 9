@@ -1,0 +1,47 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+	int x, y=60;
+	cout << "Vvedite kol-vo sek" << endl;
+	cin >> x;
+	x = x % y;
+	cout << x;
+	return 0;
+}
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+	int x, y=7;
+	cout << "Vvedite den'" << endl;
+	cin >> x;
+	x = x % y;
+	switch (x) {
+	case 0:
+		cout << "voskresenye";
+		break;
+	case 1:
+		cout << "ponedel'nik";
+		break;
+	case 2:
+		cout << "vtornik";
+		break;
+	case 3:
+		cout << "sreda";
+		break;
+	case 4:
+		cout << "chetverg";
+		break;
+	case 5:
+		cout << "pyatnitsa";
+		break;
+	case 6:
+		cout << "subbota";
+		break;
+	}
+	return 0;
+}
