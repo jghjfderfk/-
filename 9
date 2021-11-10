@@ -55,36 +55,20 @@ int main()
 	cout << "Vvedite den'" << endl;
 	cin >> x;
 	cout << "Vvedite nomer dnya nedeli 1 yanvarya, N<=7" << endl;
+	cout << "1-pn"<<endl;
+	cout << "2-vt" << endl;
+	cout << "3-sr" << endl;
+	cout << "4-cht" << endl;
+	cout << "5-pt" << endl;
+	cout << "6-sb" << endl;
+	cout << "7-vs" << endl;
 	cin >> N;
 	if (N == 7) {
 		N = 0;
 	}
-	c = (x % y + N) % 8;
-	switch (N) {
-	case 0:
-		cout << " 1 yanvarya = voskresenye" << endl;
-		break;
-	case 1:
-		cout << "1 yanvarya = ponedel'nik" << endl;
-		break;
-	case 2:
-		cout << "1 yanvarya = vtornik" << endl;
-		break;
-	case 3:
-		cout << "1 yanvarya = sreda" << endl;
-		break;
-	case 4:
-		cout << "1 yanvarya = chetverg" << endl;
-		break;
-	case 5:
-		cout << "1 yanvarya = pyatnitsa" << endl;
-		break;
-	case 6:
-		cout << "1 yanvarya = subbota" << endl;
-		break;
-	}
+	c = (x+N-1)%y;
 	switch (c) {
-	case 7:
+	case 0:
 		cout <<x<<" chislo-voskresenye";
 		break;
 	case 1:
