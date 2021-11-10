@@ -92,3 +92,27 @@ int main()
 	}
 	return 0;
 }
+
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+	int A, B, C, Y, N, S1, S2, S, K;
+	cout << "vvedite A" << endl;
+	cin >> A;
+	cout << "vvedite B" << endl;
+	cin >> B;
+	cout << "vvedite C" << endl;
+	cin >> C;
+	Y = A / C; // сколько в длине С
+	N = B / C; // сколько в ширине С
+	K = Y * N; // количество квадратов в прм
+	S2 = C * C; // площадь квадрата
+	S1 = K * S2; // площадь занятая квадратами
+	S = A*B - S1; // незанятая площадь
+	cout << "kol-vo kvadratov v pryamougol.=" << K<< endl;
+	cout << "nezanyataya ploshad'=" << S;
+  return 0;
+}
