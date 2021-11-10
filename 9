@@ -116,3 +116,20 @@ int main()
 	cout << "nezanyataya ploshad'=" << S;
   return 0;
 }
+
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+	int x, y;
+	cout << "vvedite god" << endl;
+	cin >> x;
+	y = x / 100;
+	if (x % 100 == 0) {
+		y--;
+	}
+	cout << y+1 << "-oe stoletie";
+  return 0;
+}
