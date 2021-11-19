@@ -1,0 +1,77 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+	int A, B;
+	cout << "A=" << endl;
+	cin >> A;
+	cout << "B=" << endl;
+	cin >> B;
+	if (A > 2, B <= 3) {
+		cout << "true";
+	}
+	else {
+		cout << "false";
+	}
+	return 0;
+}
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+	int A, B, C;
+	cout << "A=";
+	cin >> A;
+	cout << "B=";
+	cin >> B;
+	cout << "C=";
+	cin >> C;
+	if (B>A, C>B, C>A) {
+		cout << "true";
+	}
+	else {
+		cout << "false";
+	}
+	return 0;
+}
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+	int x;
+	cout << "vvedite chislo" << endl;
+	cin >> x;
+	if (x >= 10, x < 100) {
+		cout << "true";
+	}
+	else {
+		cout << "false";
+	}
+	return 0;
+}
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+	int x, y, z, c;
+	cout << "vvedite chislo" << endl;
+	cin >> x;
+	y = x % 10;
+	z = (x % 100)/ 10;
+	c = x / 100;
+	if ((c > z, z > y) or (y > z, z > c)) {
+		cout<<"true";
+	}
+	else {
+		cout << "false";
+	}
+	return 0;
+}
+
