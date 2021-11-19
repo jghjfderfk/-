@@ -1,0 +1,53 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+	int a, b, c;
+	cout << "a=";
+	cin >> a;
+	cout << "b=";
+	cin >> b;
+	if (a==b) {
+		a = 0;
+		b = 0;
+		cout << "a=" << a << "   b=" << b;
+	}
+	else {
+		c = a;
+		a = b;
+		b = c;
+		cout << "a=" << a << "  b=" << c;
+	}
+	return 0;
+}
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+	int a, b, c;
+	cout << "a=";
+	cin >> a;
+	cout << "b=";
+	cin >> b;
+	cout << "c=";
+	cin >> c;
+	if (c<a && c<b) {
+		a = a + b;
+		cout << "summa naubolshih=" << a;
+	}
+	else {
+		if (b < c && b < a) {
+			c = c + a;
+			cout << "summa naubolshih=" << c;
+		}
+		else {
+			b = b + c;
+			cout << "summa naubolshih=" << b;
+		}
+	}
+	return 0;
+}
+
