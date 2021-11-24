@@ -51,3 +51,100 @@ int main()
 	return 0;
 }
 
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main() {
+	double Ax, Ay, Bx, By, Cx, Cy, AB, AC;
+	cout << "vvedite koordinati t. A" << endl;
+	cin >> Ax >> Ay;
+	cout << "vvedite koordinati t. B" << endl;
+	cin >> Bx >> By;
+	cout << "vvedite koordinati t. C" << endl;
+	cin >> Cx >> Cy;
+	AB = sqrt((abs(Ax - Bx)) * (abs(Ax - Bx)) + (abs(Ay - By)) * (abs(Ay - By)));
+	AC= sqrt((abs(Ax - Cx)) * (abs(Ax - Cx)) + (abs(Ay - Cy)) * (abs(Ay - Cy)));
+	if (AB > AC) {
+		cout << "rasstoyanie ot A do C=" << AC;
+	}
+	else {
+		cout << "rasstoyanie ot A do B=" << AB;
+	}
+	return 0;
+}
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main() {
+	double Ax, Ay;
+	cout << "vvedite koordinati t. A (A ne lejit na Ox, Oy)" << endl;
+	cin >> Ax >> Ay;
+	if (Ax > 0 and Ay > 0) {
+		cout << "eto 1 chetvert'";
+	}
+	if (Ax > 0 and Ay < 0) {
+		cout << "eto 4 chetvert'";
+	}
+	if (Ax < 0 and Ay>0) {
+		cout << "eto 2 chetvert'";
+	}
+	if (Ax < 0 and Ay < 0) {
+		cout << "eto 3 chetvert'";
+	}
+	
+	return 0;
+}
+
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main() {
+	int x;
+	cout << "vvedite chislo" << endl;
+	cin >> x;
+	if (x < 0) {
+		cout << "otritsatelnoe ";
+	}
+	if (x > 0) {
+		cout << "polojitelnoe ";
+	}
+	if (x == 0) {
+		cout << "nulevoe";
+		return 0;
+	}
+	if (x % 2 == 0) {
+		cout << "chetnoe";
+	}
+	else {
+		cout << "nechetnoe";
+	}
+	return 0;
+}
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main() {
+	int x;
+	cout << "vvedite chislo ot 1 do 999" << endl;
+	cin >> x;
+	if (x % 2 == 0) {
+		cout << "chetnoe ";
+	}
+	else {
+		cout << "nechetnoe ";
+	}
+	if (x < 10) {
+		cout << "odnoznachnoe";
+	}
+	if (x >= 10 and x < 100) {
+		cout << "dvuznachnoe";
+	}
+	if (x>=100) {
+		cout << "trehznachnoe";
+	}
+	return 0;
+}
