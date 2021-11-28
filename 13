@@ -1,0 +1,16 @@
+#include<iostream>
+#include<math.h>
+
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "RUS");
+	double x, y, P;
+	cout << "Введите стоимость конфет за 1 кг" << endl;
+	cin >> x;
+	cout<<"стоимость конфет за " << endl;
+	for (y = 0.1; y <= 1; y+=0.1) {
+		P = x * y;
+		cout << y << "=" << P << endl;
+	}
+	return 0;
+}
