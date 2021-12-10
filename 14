@@ -54,3 +54,21 @@ int main()
 	cout << "Сумма =" << S << " " << "K=" << K;
 	return 0;
 }
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    int k = 1;
+    double p, s = 1000;
+    cout << "P:";
+    cin >> p;
+    while (s <= 1100) {
+        ++k;
+        s += s * p / 100;
+    }
+    cout << "k:" << k << endl << "nS:" << s;
+    return 0;
+}
+
