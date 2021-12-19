@@ -84,3 +84,23 @@ int main()
     }
     return 0;
 }
+
+
+#include <iostream>
+double fact2(int n) {
+    int temp = 1;
+    for (; n > 0; n -= 2) temp *= n;
+    return temp;
+}
+
+int main()
+{
+    using namespace std;
+    int i, n;
+    for (i = 1; i <= 5; ++i) {
+        cout << "N=" << endl;
+        cin >> n;
+        cout << fact2(n);
+    }
+    return 0;
+}
